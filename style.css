@@ -7,6 +7,75 @@
 
 }
 
+@media(max-width:400px) {
+    
+    .container_one h4{
+   font-size: 14px;
+   margin-top: -50px;
+    }
+    .container_one
+    {
+  white-space: nowrap;
+  margin-top: -50px;
+    }
+   .container_two 
+   {
+       margin-top:-81px;
+    margin-left: 80px;
+    white-space: nowrap;
+   }
+    .container_two li{
+        margin-left:-30px;
+    }
+  .container_two li a
+   {
+    font-size: 8px;
+   }
+   .container_two li a:hover{
+       color: cyan;
+       transition:3s;
+   }
+ nav .container_three i
+{
+    margin-left:200px;
+    display:0px;
+}
+
+main .img-box1 img
+    {
+        height:35%;
+        margin-bottom:330px;
+        margin-left:-30%;
+        
+    }
+     
+main .home h1
+{
+   font-size:30px; 
+    margin-left:10px;
+    top:150px;
+} 
+main .home h2
+    {
+        font-size:20px;
+        white-space:nowrap;
+        left:-30px;
+        top:70px;
+    }
+    main .home .paragraph
+    {
+     font-size:20px;  
+        left: -120px;
+        top:33px;
+        
+    }
+    main .home button
+    {
+        top:80px;
+        font-size:60%;
+        left:-120px;
+    }
+}
 .navbar
 {
     position: relative;
@@ -278,6 +347,7 @@ div h1
 {
     display: flex;
 }
+
 .about-container .paragraph
 {
     color: cyan;
@@ -286,6 +356,7 @@ div h1
  margin-left: 640px;
  background-color: transparent;
 }
+
 .about .button{
     
     border-radius: 25px;
@@ -994,4 +1065,21 @@ div h1
         text-align: right;
         margin-left: 10px;
         color: white;
+    }
+    @media (max-width: 768px) {
+        .footer-container {
+            margin-left: auto; /* Override previous margin-left */
+            flex-direction: column; /* Stack items vertically */
+            align-items: flex-start; /* Align items to the start of the column */
+        }
+    
+        .footer-container a {
+            margin: 5px 0; /* Adjust margin for better spacing in column layout */
+        }
+    
+        .footer-container span {
+            text-align: left; /* Align text to the left for better readability */
+            margin-left: 0; /* Remove left margin */
+            margin-top: 10px; /* Add top margin for spacing */
+        }
     }
