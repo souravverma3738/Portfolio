@@ -11,7 +11,7 @@
 </body>
 <header>
     <nav class="navbar">
-        <div class="container">
+        <div class="container_zero">
         <div class="container_one">
         <h4>Sourav Verma</h4>
         </div>
@@ -29,6 +29,7 @@
         <i class="fab fa-facebook"></i> 
         <i class="fab fa-instagram"></i> 
         <i class="fab fa-linkedin"></i>
+        
         <i class="fab fa-github"></i>
     </div>
 </div>
@@ -37,50 +38,42 @@
 </header>
 
 <main>
-    <section class="home">
-        <h1> Hello!</h1>
-        <h2>I Am Software Engineer</h2>
-        <p class="paragraph">I am Software engineer. I gained my experience with 
-         creating projects during courseworks and intrnship.<br>
-        I am expert in creating website (Html, CSS, JavaScript) and softwares (Java using Swing Framework, C, C++, C#). 
-        </p>
-        <button> <a href="#contact">Contact me</a></button>
+  
+
+<section id="home">
+    <div class="container">
+        <div class="intro-text">
+            <h1>Hello!</h1>
+            <h2>I Am Software Engineer</h2>
+            <p>
+                I am a software engineer. I gained my experience with creating projects during courseworks and internship.
+                I am an expert in creating websites (HTML, CSS, JavaScript) and software (Java using Swing Framework, C, C++, C#).
+            </p>
+            <button> <a href="#contact">Contact me</a></button>
         <a target="_blank" href="images/cv-souravverma1.pdf"><button class="download">Download CV</button></a>
-        <div class="img-box1">
-         <img src="images/cover.png" class="img">
-          </div>
         </div>
-          
-   
+        <div class="profile-picture">
+            <img src="images/profile_photo.jpeg" alt="Profile Picture">
+        </div>
+    </div>
 </section>
 </main>
 
-<section class="about" id="about">
-    <div class="about-container">
-    <div class="img-box">
-        <img src="images/cover.png" class="main-img">
-  </div>
-    <div class="heading2">
-        <p> About Me</p>
-        </div>
-        
-    <div class="heading3 ">
-        <p> Software Engineer</p>
-        </div>
-        <div class="paragraph">
-            <p> Sourav Verma, a dedicated professional seeking opportunities as a Java 
-                developer, Web developer, or Software engineer. I bring a wealth of hands-on
-                experience gained through diverse projects during internships and coursework. My skills 
-                encompass Java developement, web technologies, and software engineering, with a proven ability to 
-                deliver efficient and scalable solutions. I am eager to contribute my expertise and passion for 
-                innovation to a dynamic team.
-            </p>
-            </div>
-                <button class="button"><a href="#contact">Contact me</a></button>
-                       
-                        
-</div>
+<section id="about" class="about-section">
+    <div class="image-container">
+        <img src="images/profile_photo.jpeg" alt="Sourav Verma">
+    </div>
+    <div class="text-container">
+        <h1>About Me</h1>
+        <h2>Software Engineer</h2>
+        <p>Sourav Verma, a dedicated professional seeking opportunities as a Java developer, web developer, or software engineer. I bring a wealth of hands-on experience gained through diverse projects during internships and coursework. My skills encompass Java development, web technologies, and software engineering, with a proven ability to deliver efficient and scalable solutions. I am eager to contribute my expertise and passion for innovation to a dynamic team.</p>
+        <button class="about_button"><a href="#contact">Contact me</a></button>
+               
+    </div>
 </section>
+                      
+                        
+
 <section id="projects">
         <h2> Projects</h2>
        
@@ -228,20 +221,9 @@
     </div>
 </section>
 <section id="contact">
-    
-    <h2>Contact</h2>
-    
-    <div class="contact-container">
-        <div class="contact-info">
-            <h3>Contact Info</h3>
-            <p><strong>Name:</strong> Sourav Verma</p>
-            <p><strong>Email:</strong> souravverma1582000@gmail.com</p>
-            <p><strong>Phone:</strong> UK(+44)-07824047235</p>
-            <p><strong>Address:</strong> 221, Main Street, Kelty, KY40AN</p>
-            
-        </div>
+     <h1 class="contact-title">Contact</h1>
         <div class="contact-form">
-            <h3>Contact Me</h3>
+            <h2>Get In Touch</h2>
             <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="cac391cc-4b3f-40df-bed9-b7b609aa2874">
                 <div class="form-group">
@@ -262,18 +244,22 @@
                 </div>
                 <button type="submit">Submit</button>
             </form>
-        </div>
+        
     </div>
     
 </section>
 <footer>
-    <div class="footer-container">
-        <a href="#about">About Me</a>
-        <a href="#project">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a href="https://github.com/souravverma3738" target="_blank">GitHub</a>
-        <span>© 2024 | Sourav Verma</span>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="#github">GitHub</a>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 | Sourav Verma
+        </div>
     </div>
 </footer>
 <script>
