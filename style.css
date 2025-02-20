@@ -4,19 +4,21 @@
   text-decoration: none;
   background-color: black;
 
-}
+}   
 
 
-.navbar
-{
-    position: relative;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding-left: 15px;
-     padding-right: 15px;
+    padding-right: 15px;
     border-radius: 10px;
-    margin-left: 6vw;
     height: 80px;
-    margin-right: auto;
-    
+    background: black; /* Keep the navbar visible */
+    z-index: 1000; /* Ensures navbar stays above other content */
+    transition: top 0.3s; /* Smooth effect when scrolling */
 }
 .menu-icon
 {
@@ -43,6 +45,7 @@
 .container_two
 {
     margin-left: 200px;
+    transition: all 0.3s ease-in-out;
 }
 .container_three
 {
@@ -128,6 +131,8 @@ i:hover{
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan;
   }
+
+  
 main h1{
     position:absolute;
     color: white;
