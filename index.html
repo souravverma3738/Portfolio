@@ -17,22 +17,32 @@
         <h4>Sourav Verma</h4>
         </div>
       <ul class="container_two">
-        <li> <a href="#">Home</a></li>
+      
+       <li> <a href="#">Home</a></li>
         <li><a class="two" href="#about">About</a></li>
         <li> <a href="#projects">Projects</a></li>
         <li> <a href="#skills">Skills</a></li>
         <li> <a href="#contact">Contact</a></li>
+        
         <span></span>
+       
     </ul>
     <a href="#" class="menu-icon">
         <i class="fa-solid fa-bars" style="color: #faf7f5;"></i>
     </a>
-   </div>
+
+  
+
+      
+   
+    </div>
     </nav>
 </header>
 
 <main>
-  <section id="home">
+  
+
+<section id="home">
     <div class="container">
         <div class="intro-text">
             <h1>Hello!</h1>
@@ -42,7 +52,7 @@
                 I am an expert in creating websites (HTML, CSS, JavaScript) and software (Java using Swing Framework, C, C++, C#).
             </p>
             <button> <a href="#contact">Contact me</a></button>
-        <a target="_blank" href="images/Sourav_resume.pdf"><button class="download">Download CV</button></a>
+        <a target="_blank" href="images/cv-souravverma-2.pdf"><button class="download">Download CV</button></a>
         </div>
         <div class="profile-picture">
             <img src="images/profile_photo.jpeg" alt="Profile Picture">
@@ -69,7 +79,8 @@
 
 <section id="projects">
         <h2> Projects</h2>
-         <div class="portfolio">
+       
+    <div class="portfolio">
         <!-- First Row -->
         <div class="project">
             <img class="images1" src="images/project1.jpg" alt="Project 1">
@@ -262,8 +273,28 @@
         form.reset();
     });
 </script>
+<script>
+let lastScrollTop = 0;
+const navbar = document.querySelector(".navbar");
 
+window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down, hide navbar
+        navbar.style.top = "-100px";
+    } else {
+        // Scrolling up, show navbar
+        navbar.style.top = "0";
+    }
+    lastScrollTop = scrollTop;
+});
+</script>
+<script>
+document.querySelector(".menu-icon").addEventListener("click", function () {
+    document.querySelector(".container_two").classList.toggle("active");
+});
+</script>
 </body>
 
 </html>
-
