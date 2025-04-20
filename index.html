@@ -46,13 +46,13 @@
     <div class="container">
         <div class="intro-text">
             <h1>Hello!</h1>
-            <h2>I Am Software Engineer</h2>
+            <h2>I Am <span class="typing-text"></span></h2>
             <p>
                 I am a software engineer. I gained my experience with creating projects during courseworks and internship.
                 I am an expert in creating websites (HTML, CSS, JavaScript) and software (Java using Swing Framework, C, C++, C#).
             </p>
             <button> <a href="#contact">Contact me</a></button>
-        <a target="_blank" href="images/Sourav_resume.docx"><button class="download">Download CV</button></a>
+        <a target="_blank" href="images/cv-souravverma-2.pdf"><button class="download">Download CV</button></a>
         </div>
         <div class="profile-picture">
             <img src="images/profile_photo.jpeg" alt="Profile Picture">
@@ -261,40 +261,101 @@
             <a href="https://github.com/souravverma3738">GitHub</a>
         </div>
         <div class="footer-copyright">
-            &copy; 2024 | Sourav Verma
+            &copy; 2025 | Sourav Verma
         </div>
     </div>
 </footer>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Get the form element
-        var form = document.getElementById("contactForm");
-        // Reset the form
-        form.reset();
+    // Mobile Menu Toggle
+    document.querySelector(".menu-icon").addEventListener("click", function() {
+        document.querySelector(".container_two").classList.toggle("active");
     });
-</script>
-<script>
-let lastScrollTop = 0;
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
-    if (scrollTop > lastScrollTop) {
-        // Scrolling down, hide navbar
-        navbar.style.top = "-100px";
-    } else {
-        // Scrolling up, show navbar
-        navbar.style.top = "0";
+    // Close mobile menu when clicking a menu item
+    const menuItems = document.querySelectorAll(".container_two li a");
+    menuItems.forEach(item => {
+        item.addEventListener("click", function() {
+            document.querySelector(".container_two").classList.remove("active");
+        });
+    });
+    
+    // Navbar scroll behavior
+    let lastScrollTop = 0;
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Only apply this behavior on non-mobile screens
+        if (window.innerWidth > 768) {
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down, hide navbar
+                navbar.style.top = "-100px";
+            } else {
+                // Scrolling up, show navbar
+                navbar.style.top = "0";
+            }
+        } else {
+            // Always show navbar on mobile
+            navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+    });
+    
+    // Contact form reset
+    var form = document.getElementById("contactForm");
+    if (form) {
+        form.reset();
     }
-    lastScrollTop = scrollTop;
 });
+// Typing Animation
+document.addEventListener("DOMContentLoaded", function() {
+    const typingTextElement = document.querySelector(".typing-text");
+    const textOptions = ["Sourav Verma", "Software Engineer"];
+    let currentTextIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingDelay = 150;
+    let deletingDelay = 50;
+    let newTextDelay = 2000; // Delay after typing a complete text
+    
+    function typeText() {
+        const currentText = textOptions[currentTextIndex];
+        
+        if (isDeleting) {
+            // Remove a character
+            typingTextElement.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+            typingDelay = deletingDelay;
+        } else {
+            // Add a character
+            typingTextElement.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+            typingDelay = 150;
+        }
+        
+        // Check if done typing
+        if (!isDeleting && charIndex === currentText.length) {
+            // Start deleting after delay
+            isDeleting = true;
+            typingDelay = newTextDelay;
+        } else if (isDeleting && charIndex === 0) {
+            // Switch to next text
+            isDeleting = false;
+            currentTextIndex = (currentTextIndex + 1) % textOptions.length;
+            typingDelay = 500; // Slight pause before typing next word
+        }
+        
+        setTimeout(typeText, typingDelay);
+    }
+    
+    // Start the typing animation
+    setTimeout(typeText, 1000);
+}); 
+
 </script>
-<script>
-document.querySelector(".menu-icon").addEventListener("click", function () {
-    document.querySelector(".container_two").classList.toggle("active");
-});
-</script>
+
 </body>
 
 </html>
