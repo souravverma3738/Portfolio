@@ -43,25 +43,13 @@
 }
 
 /* Mobile menu header */
-.menu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #333;
-}
-
-.menu-header h3 {
-    color: white;
-    margin: 0;
-    font-size: 20px;
-}
 
 .close-menu {
     color: white;
     font-size: 24px;
     cursor: pointer;
     background: transparent;
+    margin-left: auto;
 }
 
 /* Menu categories */
