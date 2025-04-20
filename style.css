@@ -24,6 +24,146 @@
 {
     display:none;
 }
+
+.mobile-menu-container {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    width: 80%; /* Width of the menu */
+    height: 100vh;
+    background-color: #000;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 2000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-menu-container.active {
+    right: 0; /* Slide in from right */
+}
+
+/* Mobile menu header */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.menu-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+
+.close-menu {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Menu categories */
+.menu-categories {
+    padding: 10px 0;
+}
+
+.menu-category {
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-category:hover {
+    background-color: #111;
+}
+
+.menu-category a {
+    color: white;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.menu-category a:hover {
+    color: cyan;
+}
+
+/* Overlay for background dimming */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1999;
+    display: none;
+}
+
+.menu-overlay.active {
+    display: block;
+}
+.menu-profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.menu-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.menu-profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-profile-info h4 {
+    color: white;
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.menu-profile-info p {
+    color: #aaa;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Cyan highlight indicator for active menu item */
+.menu-category.active {
+    border-left: 3px solid cyan;
+}
+
+/* Social links section */
+.menu-social {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #333;
+}
+
+.menu-social a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.menu-social a:hover {
+    color: cyan;
+}
+
 .container
 {
     display: flex;
