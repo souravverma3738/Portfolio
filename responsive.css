@@ -1,287 +1,336 @@
-@media screen and (max-width: 1046px) {
+/* Responsive CSS for Sourav Verma's Portfolio Website */
 
-    .navbar {
-        height: 70px;
-        padding: 0 3%;
-    }
+/* Large screens (default styles are already set in style.css) */
+
+/* Medium screens (laptops, smaller desktops) */
+@media screen and (max-width: 1200px) {
+    
+    
     .container_two {
-        margin-top: -10px;
-        margin-left: -250px;
-        display: flex
-;
+        margin-left: 120px; 
+        margin-top: 25px;/* Maintain good gap after 1200px */
     }
-    .container_one h4 {
-        font-size: 24px;
-    }
-
-    .container_two li a {
-        font-size: 16px;
-    }
-    nav span{        
-        margin-left: -5px;
-        margin-top: 36px;
-    }
-.container_zero
- {
-    gap:380px;
- }
- .container_one
- {
-    font-size: 25px;
-    background-color: transparent;
- }
-
- .profile-picture img
- {
-
-   width:80%;
-  
- }
-
- #contact
- {
-     margin-top:1800px ;
- }
- 
- .footer-contact
- {
-    margin-top:100px;
- }
-
-}
-
-@media  screen and (max-width:910px) {
-    .navbar {
-        height: 65px;
-        padding: 0 10px;
-    }
-    .container_two
-    {
-        display: flex;
-        gap: 20px;
     
+    /* Fix span positioning */
+    nav span {
+        margin-left: -405px; /* Adjusted position */
+    }
     
+    .container_two li:nth-child(2):hover ~ span {
+        left: 835px; /* Adjusted position */
     }
-    .container_one h4 {
-        font-size: 22px;
+    
+    .container_two li:nth-child(3):hover ~ span {
+        left: 912px; /* Adjusted position */
     }
-
-    .container_two li a {
-        font-size: 14px;
+    
+    .container_two li:nth-child(4):hover ~ span {
+        left: 1005px; /* Adjusted position */
+    }
+    
+    .container_two li:nth-child(5):hover ~ span {
+        left: 1072px; /* Adjusted position */
+    }
+    li a {
         margin-right: 20px;
-    }
-    .container_one
-    {
-        font-size:32px;
-        margin-top: -10px;
-    }
-
-    nav span{        
-        margin-left: -5px;
-        margin-top: 27px;
-    }
-    .container
-    {
-        flex-direction: column-reverse;
-    }
-    .profile-picture img 
-    {
-        margin-bottom: 100px;
-        height: 40vw;
-        width:90%;
-    }
-    .intro-text
-    {
-        max-width: 100%;
-        margin-bottom: 60px;
+        font-size: 18px;
     }
     
-    .intro-text p
-    {
-        font-size: 24px;
-        overflow: hidde;
+   
+    
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
     }
-    .intro-text button 
-    {
-        font-size: 18px;
-        margin-left: 20vw;
-        gap: 30px;
+    
+    .image-container {
+        display: none; /* Hide the about me photo on smaller screens */
+    }
+    
+    .text-container {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+    
+    .text-container h1::after {
+        margin: 10px auto;
     }
 }
 
-   @media screen and (max-width:785px) {
-
-    .container_two {
-        display: none; /* Hide menu items */
-        
-    }
-
-    .container_two.active {
-        display: flex;
-        margin-left: -300px;
-        transition: transform 0.3sease-out;
-    }
-
-    .menu-icon {
-        margin-left: 650px;
-        display: block;
-        font-size: 30px;
-        color: white;
-        cursor: pointer;
-        margin-top: 15px;
-        position: absolute;
-    }   
-    .about-section
-    {
-        flex-direction: column;
-    }
-    .about-heading
-    {
-        display:block;
-        position: relative;
-        color:white;
-        font-size: 36px;
+/* Tablets */
+@media screen and (max-width: 992px) {
+    .container {
+        flex-direction: column-reverse;
+        margin-top: 80px;
     }
     
-    .about-heading::after {
-        content: '';
-        display: block;
-        width: 50px;
-        height: 3px;
-        background-color: cyan;
-        margin-left:50px;
-        margin-top:5px;
-      
-    }
-    .image-container
-    {
-        margin-top: -100px;
-        margin-left:120px;
-        overflow: hidden;
-        
-    }
-
-    .text-container
-    {
-        margin-left:5vw;
+    .intro-text {
+        text-align: center;
         margin-top: 30px;
     }
-    .text-container h1
-    {
-        display:none;
-    }
-
-    #contact
-    {
-        margin-top:2400px;
-    }
-    .intro-text button {
-        margin-left:70px;
-    }
-     
     
-   }
-   
-   @media screen and (max-width:730px) {
-
-    .container_two {
-        display: none; /* Hide menu items */
-        
+    .intro-text h1, .intro-text h2 {
+        position: static;
+        margin: 10px 0;
     }
-
-    .container_two.active {
-        display: flex;
-        margin-left: -350px;
-        transition: transform 0.3sease-out;
+    
+    .intro-text p {
+        margin: 20px 0 ;
     }
+    
+    .profile-picture {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .image-container img {
+        width: 250px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    #skills {
+        margin-top: 200px;
+        height: auto;
+    }
+    
+    .skill {
+        width: 180px;
+        padding: 15px;
+    }
+    
+    #contact {
+        margin-top: 800px;
+    }
+}
 
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+    .container_zero {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    
+    .container_one {
+        font-size: 24px;
+    }
+    
     .menu-icon {
-        margin-left: 590px;
         display: block;
-        font-size: 30px;
-        color: white;
+        font-size: 24px;
+        margin-top: 20px;
         cursor: pointer;
-        margin-top: 15px;
-        position: absolute;
-    }   
-    .about-section
-    {
+    }
+    nav span {
+        display: none; /* Hide the span on mobile */
+    }
+    .container_two {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        overflow: hidden;
+        margin-left: 0;
+        padding: 0;
+        transition: height 0.3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .container_two.active {
+        height: calc(100vh - 80px);
+    }
+    
+    .container_two li {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    .container_two.active li {
+        opacity: 1;
+    }
+    
+    .intro-text {
+        min-width: auto;
+        padding: 0 20px;
+    }
+    
+    .intro-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .intro-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    
+    .profile-picture {
+        max-width: 250px;
+    }
+    
+    .skill-container {
+        gap: 15px;
+    }
+    
+    .skill {
+        width: 140px;
+        padding: 10px;
+    }
+    
+    .skill img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .portfolio {
+        gap: 20px;
+    }
+    
+    .project {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .footer-content {
         flex-direction: column;
     }
-    .about-heading
-    {
-        display:block;
-        position: relative;
-        color:white;
-        font-size: 36px;
+    
+    .footer-links {
+        margin-bottom: 10px;
     }
     
-    .about-heading::after {
-        content: '';
-        display: block;
-        width: 50px;
-        height: 3px;
-        background-color: cyan;
-        margin-left:50px;
-        margin-top:5px;
-      
+    .footer-links a {
+        display: inline-block;
+        margin: 5px;
     }
-    .image-container
-    {
-        margin-top: -100px;
-        margin-left:120px;
-        overflow: hidden;
-        
-    }
-
-    .text-container
-    {
-        margin-left:5vw;
-        margin-top: 30px;
-    }
-    .text-container h1
-    {
-        display:none;
-    }
-
-    #contact
-    {
-        margin-top:2400px;
-    }
-    .intro-text button {
-        margin-left:70px;
-    }
-     
     
-   }
+    .footer-copyright {
+        margin-left: 0;
+    }
+    
+    #contact {
+        margin-top: 600px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .portfolio {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project {
+        margin: 10px auto;
+        width: 90%;
+        max-width: 300px;
+    }
+}
 
-   @media screen and (max-width:660px) {
-
-    .container_two {
-        display: none; /* Hide menu items */
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .container_one {
+        font-size: 20px;
+    }
+    
+    .intro-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .intro-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .intro-text p {
+        font-size: 0.9rem;
+    }
+    .intro-text button, .intro-text .download {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+        }
         
-    }
-
-    .container_two.active {
-        display: flex;
-        margin-left: -350px;
-        transition: transform 0.3sease-out;
-    }
-
-    .menu-icon {
-        margin-left: 530px;
+    
+    .intro-text .download {
+        margin-left: auto; /* Override the original 100px left margin */
+        margin-top: 10px;
         display: block;
-        font-size: 30px;
-        color: white;
-        cursor: pointer;
-        margin-top: 15px;
-        position: absolute;
-    }   
-    .container_one h4 {
-        font-size: 15px;
     }
+    
+    .profile-picture {
+        max-width: 200px;
+    }
+    
+    .skill {
+        width: calc(50% - 20px);
+    }
+    
+    .contact-form {
+        padding: 15px;
+    }
+    
+    #projects h2 {
+        margin-bottom: 100px;
+    }
+    
+    #contact {
+        margin-top: 400px;
+    }
+}
 
+/* Fixed navigation bar animation adjustment */
+@media screen and (max-width: 768px) {
+    .navbar {
+        transition: none;
+    }
+}
+
+/* Fix for skills section layout on different screen sizes */
+@media screen and (max-width: 1400px) {
+    #skills {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #skills {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #skills {
+        margin-top: 180px;
+    }
+    #contact {
+        margin-top: 200px; /* Reduced from 800px */
+    }
+}
+
+/* Fix for mobile menu */
+@media screen and (max-width: 768px) {
     .container_two li a {
-        font-size: 12px;
+        display: block;
+        padding: 10px;
+    }
+    
+    /* Make sure menu items are visible in mobile */
+    .container_two.active li a {
+        background-color: transparent;
+    }
+    #contact {
+        margin-top: 250px; /* Reduced from 600px */
+    }
+}
+@media screen and (max-width: 480px) {
+    #contact {
+        margin-top: 200px; /* Reduced from 400px */
+    }
+    #projects h2 {
+        margin-bottom: 40px; /* Smaller for mobile */
     }
 }
