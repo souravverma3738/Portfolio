@@ -291,7 +291,7 @@ div h1
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -250px; /* Consistent spacing - replace -50px */
+    margin-top: -200px; /* Consistent spacing - replace -50px */
     padding-top: 0;
 }
 .about-heading
