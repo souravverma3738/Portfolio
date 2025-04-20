@@ -107,6 +107,15 @@
 
 /* Mobile devices */
 @media screen and (max-width: 768px) {
+    .container_two {
+        display: none; /* Hide the original mobile menu */
+    }
+    
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        z-index: 1001;
+    }
     .container_zero {
         justify-content: space-between;
         padding: 0 15px;
