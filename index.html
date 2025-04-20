@@ -353,6 +353,64 @@ document.addEventListener("DOMContentLoaded", function() {
     // Start the typing animation
     setTimeout(typeText, 1000);
 }); 
+document.addEventListener("DOMContentLoaded", function() {
+    // Mobile Menu Elements
+    const menuIcon = document.querySelector(".menu-icon");
+    const mobileMenu = document.querySelector(".mobile-menu-container");
+    const closeMenu = document.querySelector(".close-menu");
+    const menuOverlay = document.querySelector(".menu-overlay");
+    const menuLinks = document.querySelectorAll(".menu-category a");
+    
+    // Open mobile menu
+    menuIcon.addEventListener("click", function() {
+        mobileMenu.classList.add("active");
+        menuOverlay.classList.add("active");
+        document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+    });
+    
+    // Close mobile menu
+    function closeMenuFunction() {
+        mobileMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+        document.body.style.overflow = ""; // Re-enable scrolling
+    }
+    
+    closeMenu.addEventListener("click", closeMenuFunction);
+    menuOverlay.addEventListener("click", closeMenuFunction);
+    
+    // Close menu when a link is clicked
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            closeMenuFunction();
+            
+            // Update active class
+            document.querySelectorAll(".menu-category").forEach(item => {
+                item.classList.remove("active");
+            });
+            this.parentElement.classList.add("active");
+        });
+    });
+    
+    // Handle scroll to highlight active section in menu
+    window.addEventListener("scroll", function() {
+        let current = "";
+        const sections = document.querySelectorAll("section");
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute("id");
+            }
+        });
+        
+        document.querySelectorAll(".menu-category").forEach(item => {
+            item.classList.remove("active");
+            if (item.querySelector("a").getAttribute("href") === `#${current}`) {
+                item.classList.add("active");
+            }
+        });
+    });
+});
 
 </script>
 
