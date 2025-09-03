@@ -1,8 +1,3 @@
-/* Responsive CSS for Sourav Verma's Portfolio Website */
-
-/* Large screens (default styles are already set in style.css) */
-
-/* Medium screens (laptops, smaller desktops) */
 @media screen and (max-width: 1200px) {
     
     
@@ -199,7 +194,6 @@
     
     .portfolio {
         gap: 20px;
-        margin-top:20px;
     }
     
     .project {
@@ -241,6 +235,7 @@
     }
 }
 
+/* Small mobile devices */
 @media screen and (max-width: 480px) {
     .container_one {
         font-size: 20px;
@@ -255,7 +250,7 @@
     }
     
     .intro-text p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
     .intro-text button, .intro-text .download {
             display: block;
@@ -322,6 +317,7 @@
 
 /* Fix for mobile menu */
 @media screen and (max-width: 768px) {
+    
     .container_two li a {
         display: block;
         padding: 10px;
@@ -331,9 +327,20 @@
     .container_two.active li a {
         background-color: transparent;
     }
+    .experience-card {
+        padding: 15px;
+    }
+    .experience-header h3 {
+        font-size: 1.2em;
+    }
+    .experience-card ul li {
+        font-size: 0.95em;
+    }
     #contact {
         margin-top: 250px; /* Reduced from 600px */
     }
+
+
 }
 @media screen and (max-width: 480px) {
     #contact {
@@ -342,4 +349,5 @@
     #projects h2 {
         margin-bottom: 40px; /* Smaller for mobile */
     }
+ 
 }
