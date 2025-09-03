@@ -21,6 +21,7 @@
        <li> <a href="#">Home</a></li>
         <li><a class="two" href="#about">About</a></li>
         <li> <a href="#projects">Projects</a></li>
+        <li> <a href="#experience">Experience</a></li>
         <li> <a href="#skills">Skills</a></li>
         <li> <a href="#contact">Contact</a></li>
         
@@ -67,6 +68,9 @@
             <a href="#projects">Projects</a>
         </div>
         <div class="menu-category">
+            <a href="#experience">Skills</a>
+        </div>
+        <div class="menu-category">
             <a href="#skills">Skills</a>
         </div>
         <div class="menu-category">
@@ -76,12 +80,10 @@
     
     <div class="menu-social">
         <a href="https://github.com/souravverma3738" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/sourav-verma-b47793168/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
     </div>
 </div>
-
 
 <main>
   
@@ -93,10 +95,10 @@
             <h2>I Am <span class="typing-text"></span></h2>
             <p>
                 I am a software engineer. I gained my experience with creating projects during courseworks and internship.
-                I am an expert in creating websites (HTML, CSS, JavaScript) and softwares (Java, C, C++, C#, Python, SQL, Firebase).
+                I am an expert in creating websites (HTML, CSS, JavaScript) and software (Java using Swing Framework, C, C++, C#).
             </p>
             <button> <a href="#contact">Contact me</a></button>
-        <a target="_blank" href="images/Sourav_resume.docx"><button class="download">Download CV</button></a>
+        <a target="_blank" href="images/cv-souravverma-2.pdf"><button class="download">Download CV</button></a>
         </div>
         <div class="profile-picture">
             <img src="images/profile_photo.jpeg" alt="Profile Picture">
@@ -181,6 +183,43 @@
 
 </section>
 
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-container">
+
+        <div class="experience-card">
+            <div class="experience-header">
+                <h3>Backend Engineer (Java)</h3>
+                <span class="company">App Era Technologies – Noida, India</span>
+                <span class="date">Nov 2024 – Jul 2025</span>
+            </div>
+            <ul>
+                <p>Developed scalable RESTful APIs with <strong>Java</strong> and <strong>Spring Boot</strong>.
+                Implemented secure authentication using <strong>JWT & OAuth2</strong>.
+                Optimized <strong>MySQL & MongoDB</strong> queries, improving performance by 25%.
+                Deployed services via <strong>Docker</strong> and CI/CD pipelines with GitHub Actions.
+                Delivered features bi-weekly in an Agile/Scrum team with 90%+ test coverage.</p>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-header">
+                <h3>Software Engineer Intern</h3>
+                <span class="company">Edinburgh Napier University – Edinburgh, UK</span>
+                <span class="date">Jan 2023 – May 2023</span>
+            </div>
+            <ul>
+                <p>Built AI-powered supply chain system using <strong>Java</strong>, <strong>JADE agents</strong>, and <strong>MySQL</strong>
+                   Developed interactive desktop GUI with <strong>Java Swing</strong>, achieving 99% bug-free rate.
+                   Optimized SQL queries, boosting performance by 15%.
+                   Created and executed 50+ <strong>JUnit</strong> test cases with 95% pass rate.</p>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+</section>
    <section id="skills">
     <h2>My Skills</h2>
     <div class="skill-container">
@@ -397,6 +436,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Start the typing animation
     setTimeout(typeText, 1000);
 }); 
+
 document.addEventListener("DOMContentLoaded", function() {
     // Mobile Menu Elements
     const menuIcon = document.querySelector(".menu-icon");
@@ -455,6 +495,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
 
 </script>
 
