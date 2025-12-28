@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/souravverma3738/Portfolio_new/static/css/main.eccef834.css",
+    "main.js": "/souravverma3738/Portfolio_new/static/js/main.24696208.js",
+    "index.html": "/souravverma3738/Portfolio_new/index.html",
+    "main.eccef834.css.map": "/souravverma3738/Portfolio_new/static/css/main.eccef834.css.map",
+    "main.24696208.js.map": "/souravverma3738/Portfolio_new/static/js/main.24696208.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eccef834.css",
+    "static/js/main.24696208.js"
+  ]
+}
