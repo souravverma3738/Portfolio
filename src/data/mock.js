@@ -1,5 +1,5 @@
 
-import profileImage from "./unnamed.jpg";
+
 
 export const portfolioData = {
   profile: {
@@ -11,7 +11,7 @@ export const portfolioData = {
     linkedin: "https://www.linkedin.com/in/sourav-verma-b47793168",
     github: "https://github.com/souravverma",
     summary: "Software Engineer skilled in designing and developing cloud-native, event-driven applications using Java, Python (FastAPI), JavaScript/TypeScript, React, and Node.js. Experienced in building scalable, secure, and maintainable RESTful microservices deployed on Microsoft Azure using Docker, Kubernetes, and serverless functions.",
-    image: profileImage,
+    image: "/image/unnamed.jpg",
   },
   
   experience: [

@@ -12,11 +12,8 @@ const AboutApp = () => {
         <div className="flex-shrink-0">
           <div className="w-32 h-32 rounded-2xl overflow-hidden border-4 border-cyan-500/50 shadow-lg shadow-cyan-500/20">
   {profile.image ? (
-    <img
-      src={profile.image}
-      alt={profile.name}
-      className="w-full h-full object-cover"
-    />
+    <img src="../../image/unnamed.jpg" alt="Profile" />
+
   ) : (
     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-cyan-500/20 to-blue-500/20">
       <User className="w-16 h-16 text-cyan-400" />
