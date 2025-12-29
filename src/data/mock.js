@@ -8,8 +8,8 @@ export const portfolioData = {
     location: "Livingston, Scotland, UK",
     email: "souravverma1582000@gmail.com",
     phone: "+44-7824047235",
-    linkedin: "https://www.linkedin.com/in/sourav-verma-b47793168",
-    github: "https://github.com/souravverma",
+    linkedin: "https://www.linkedin.com/in/sourav-verma-b47793168/",
+    github: "https://github.com/souravverma3738?tab=repositories",
     summary: "Software Engineer skilled in designing and developing cloud-native, event-driven applications using Java, Python (FastAPI), JavaScript/TypeScript, React, and Node.js. Experienced in building scalable, secure, and maintainable RESTful microservices deployed on Microsoft Azure using Docker, Kubernetes, and serverless functions.",
     image: "/image/unnamed.jpg",
   },
@@ -23,12 +23,12 @@ export const portfolioData = {
       duration: "September 2025 – November 2025",
       description: "Developed backend services using Node.js and NestJS for a Home Care Training & Compliance Portal for 200+ healthcare staff.",
       achievements: [
-        "Designed and implemented RESTful APIs integrating PostgreSQL for user management, course enrollment, certificate generation, and compliance tracking, supporting 500+ concurrent users",
+        "Designed and implemented RESTful APIs integrating PostgreSQL and Kafka for user management, course enrollment, certificate generation, and compliance tracking, supporting 500+ concurrent users",
         "Built a role-based training matrix system, reducing manual training administration time by 70%",
         "Integrated third-party APIs: Zoom/Teams, SendGrid, Twilio, and Firebase for communication and notifications",
         "Deployed services using Docker containers and Kubernetes on Azure/AWS infrastructure with CDN integration"
       ],
-      technologies: ["Node.js", "NestJS", "PostgreSQL", "Docker", "Kubernetes", "Azure", "AWS"]
+      technologies: ["Node.js", "React", "Python", "NestJS", "PostgreSQL", "Docker", "Kubernetes", "Azure", "AWS"]
     },
     {
       id: 2,
