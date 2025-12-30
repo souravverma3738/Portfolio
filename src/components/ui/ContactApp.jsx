@@ -158,7 +158,7 @@ const ContactApp = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:border-orange-500/50 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-colors text-white"
-                    placeholder="Your nam12e"
+                    placeholder="Your name"
                   />
                 </div>
 
@@ -184,7 +184,7 @@ const ContactApp = () => {
                     required
                     rows="5"
                     className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:border-orange-500/50 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-colors text-white resize-none"
-                    placeholder="Your messag1e..."
+                    placeholder="Your message..."
                   ></textarea>
                 </div>
 
@@ -201,7 +201,7 @@ const ContactApp = () => {
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      Send Message1
+                      Send Message
                     </>
                   )}
                 </button>
