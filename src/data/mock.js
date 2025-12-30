@@ -1,6 +1,3 @@
-
-
-
 export const portfolioData = {
   profile: {
     name: "SOURAV VERMA",
@@ -74,7 +71,8 @@ export const portfolioData = {
         "Identified and patched critical security vulnerabilities, leading to a 30% reduction in reported bugs",
         "Handled over 100 distinct message scenarios with parsing and validation"
       ],
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80",
+      github: "https://github.com/souravverma3738/Napier-Bank-Messaging-Platform"
     },
     {
       id: 2,
@@ -86,10 +84,70 @@ export const portfolioData = {
         "Scalable backend with input validation and secure API endpoints",
         "Containerized application deployed to cloud hosting"
       ],
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&q=80",
+      github: "https://github.com/souravverma3738/Dubai-Shawarma-More-Website",
+      liveUrl: "https://dubaishawarmore.co.uk"
     },
     {
       id: 3,
+      name: "River Garden Training",
+      description: "Comprehensive training management system for healthcare staff with course enrollment, compliance tracking, and certificate generation.",
+      technologies: ["Node.js", "React", "PostgreSQL", "NestJS", "Docker", "Kubernetes"],
+      highlights: [
+        "Built role-based training matrix system reducing manual administration by 70%",
+        "Integrated Zoom/Teams, SendGrid, and Twilio APIs for seamless communication",
+        "Deployed using Docker containers and Kubernetes on Azure infrastructure",
+        "Supports 500+ concurrent users with real-time compliance monitoring"
+      ],
+      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+      github: "https://github.com/souravverma3738/River-Garden-Training",
+      liveUrl: "https://staff.training.academyoflondon.co.uk/"
+    },
+    {
+      id: 4,
+      name: "Bank Converter",
+      description: "Document conversion tool for accountants to easily convert bank statements and invoices to Excel format, streamlining financial data processing.",
+      technologies: ["Python", "Pandas", "openpyxl", "PyPDF2", "Flask"],
+      highlights: [
+        "Automated conversion of PDF bank statements and invoices to Excel spreadsheets",
+        "Intelligent data extraction and formatting for accounting workflows",
+        "Support for multiple bank statement formats with 95% accuracy",
+        "Reduced manual data entry time by 80% for accounting teams"
+      ],
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80",
+      github: "https://github.com/souravverma3738/bank_convertor",
+      liveUrl: "https://bank.alkhalid.co.uk"
+    },
+    {
+      id: 5,
+      name: "HR Analytics Dashboard",
+      description: "Interactive Power BI dashboard for comprehensive HR metrics analysis, employee attrition tracking, and workforce insights to support data-driven HR decisions.",
+      technologies: ["Power BI", "DAX", "Data Modeling", "Excel"],
+      highlights: [
+        "Built interactive visualizations tracking 15+ key HR metrics including attrition rate, employee demographics, and performance indicators",
+        "Designed DAX measures for complex calculations reducing manual reporting time by 60%",
+        "Created department-wise and role-based analytics enabling targeted retention strategies",
+        "Implemented dynamic filtering and drill-down capabilities for deeper workforce insights"
+      ],
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+      github: "https://github.com/souravverma3738/HR-Analytics-Dashboard"
+    },
+    {
+      id: 6,
+      name: "Ecommerce Sales Dashboard",
+      description: "Comprehensive Power BI dashboard analyzing e-commerce sales performance, customer behavior, and revenue trends to optimize business strategies.",
+      technologies: ["Power BI", "DAX", "Data Analysis", "Excel"],
+      highlights: [
+        "Analyzed sales data across multiple regions and product categories with real-time KPI tracking",
+        "Built advanced DAX calculations for profit margins, sales growth, and customer segmentation",
+        "Created interactive visualizations for revenue trends, top-performing products, and seasonal patterns",
+        "Enabled data-driven decision making with dynamic filters and custom metrics reducing analysis time by 50%"
+      ],
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
+      github: "https://github.com/souravverma3738/Ecommerce-Sales-Dashboard"
+    },
+    {
+      id: 7,
       name: "AI Supply Chain Management System",
       description: "Intelligent system leveraging JADE framework for optimizing supplier-customer matching and pricing strategies.",
       technologies: ["Java", "JADE", "MySQL", "AI Agents"],
@@ -98,7 +156,8 @@ export const portfolioData = {
         "Enhanced procurement efficiency by 25% with optimized matching algorithms",
         "Improved database performance by 15% through SQL query optimization"
       ],
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80",
+      github: "https://github.com/souravverma3738/AI-Supply-Chain-Management"
     }
   ],
   

@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { portfolioData } from '../../data/mock';
-import { ExternalLink, Star } from 'lucide-react';
+import { ExternalLink, Star, Github } from 'lucide-react';
 
 const ProjectsApp = () => {
   const { projects } = portfolioData;
@@ -13,29 +13,50 @@ const ProjectsApp = () => {
 
       <div className="grid gap-6">
         {projects.map((project) => (
-          <div 
+          <div
             key={project.id}
             className="bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 group"
           >
             {/* Project Image */}
             <div className="relative h-48 overflow-hidden bg-gray-800">
-              <img 
+              <img
                 src={project.image}
                 alt={project.name}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent"></div>
-              <div className="absolute top-4 right-4">
-                <button className="p-2 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-colors">
-                  <ExternalLink className="w-5 h-5" />
-                </button>
-              </div>
             </div>
 
             {/* Project Content */}
             <div className="p-5">
-              <h3 className="text-xl font-bold mb-2 text-cyan-400">{project.name}</h3>
+              <div className="flex items-start justify-between mb-2">
+                <h3 className="text-xl font-bold text-cyan-400">{project.name}</h3>
+                <div className="flex gap-2">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-green-500/20 hover:bg-green-500/30 border border-green-500/50 rounded-lg transition-all flex items-center gap-2"
+                      title="View Live Site"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-purple-500/20 hover:bg-purple-500/30 border border-purple-500/50 rounded-lg transition-all flex items-center gap-2"
+                      title="View on GitHub"
+                    >
+                      <Github className="w-5 h-5" />
+                    </a>
+                  )}
+                </div>
+              </div>
               <p className="text-gray-300 mb-4">{project.description}</p>
 
               {/* Highlights */}
