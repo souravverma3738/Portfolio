@@ -72,7 +72,7 @@ export const portfolioData = {
         "Handled over 100 distinct message scenarios with parsing and validation"
       ],
       image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80",
-      github: "https://github.com/souravverma3738/Napier-Bank-Messaging-Platform"
+      github: "https://github.com/souravverma3738/Napier_Bank_Messaging"
     },
     {
       id: 2,
@@ -85,7 +85,7 @@ export const portfolioData = {
         "Containerized application deployed to cloud hosting"
       ],
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&q=80",
-      github: "https://github.com/souravverma3738/Dubai-Shawarma-More-Website",
+      github: "https://github.com/souravverma3738/shawarmaore-website",
       liveUrl: "https://dubaishawarmore.co.uk"
     },
     {
@@ -100,7 +100,7 @@ export const portfolioData = {
         "Supports 500+ concurrent users with real-time compliance monitoring"
       ],
       image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
-      github: "https://github.com/souravverma3738/River-Garden-Training",
+      github: "https://github.com/souravverma3738/river_garden",
       liveUrl: "https://staff.training.academyoflondon.co.uk/"
     },
     {
@@ -157,7 +157,7 @@ export const portfolioData = {
         "Improved database performance by 15% through SQL query optimization"
       ],
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80",
-      github: "https://github.com/souravverma3738/AI-Supply-Chain-Management"
+      github: "https://github.com/souravverma3738/Agent-based-Supply-Chain"
     }
   ],
   
