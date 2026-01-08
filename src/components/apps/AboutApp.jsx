@@ -66,7 +66,6 @@ const AboutApp = () => {
         </div>
       </div>
 
-      {/* Summary */}
       <div className="mb-8">
         <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
           <div className="w-1 h-6 bg-cyan-500 rounded"></div>
@@ -106,7 +105,7 @@ const AboutApp = () => {
         </h3>
         <div className="grid gap-4">
           {certifications.map((cert, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white/5 rounded-xl p-4 border border-white/10 hover:border-blue-500/50 transition-colors"
             >
