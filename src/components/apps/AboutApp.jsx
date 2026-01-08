@@ -61,10 +61,7 @@ const AboutApp = () => {
               <Github className="w-4 h-4" />
               GitHub
             </a>
-            <button className="px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/50 rounded-lg transition-all flex items-center gap-2">
-              <Download className="w-4 h-4" />
-              Resume
-            </button>
+           
           </div>
         </div>
       </div>
