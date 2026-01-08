@@ -76,7 +76,6 @@ const AboutApp = () => {
         </p>
       </div>
 
-      {/* Education */}
       <div className="mb-8">
         <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
           <div className="w-1 h-6 bg-purple-500 rounded"></div>
