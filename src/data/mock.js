@@ -3,7 +3,7 @@ export const portfolioData = {
     name: "SOURAV VERMA",
     title: "Software Engineer",
     location: "Livingston, Scotland, UK",
-    email: "souravverma1582000@gmail.com",
+    email: "souravverma4775@gmail.com",
     phone: "+44-7824047235",
     linkedin: "https://www.linkedin.com/in/sourav-verma-b47793168/",
     github: "https://github.com/souravverma3738?tab=repositories",
