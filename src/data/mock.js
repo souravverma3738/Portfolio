@@ -3,11 +3,11 @@ export const portfolioData = {
     name: "SOURAV VERMA",
     title: "Software Engineer",
     location: "Livingston, Scotland, UK",
-    email: "souravverma4775@gmail.com",
+    email: "souravverma1582000@gmail.com",
     phone: "+44-7824047235",
     linkedin: "https://www.linkedin.com/in/sourav-verma-b47793168/",
     github: "https://github.com/souravverma3738?tab=repositories",
-    summary: "Software Engineer skilled in designing and developing cloud-native, event-driven applications using Java, Python (FastAPI), JavaScript/TypeScript, React, and Node.js. Experienced in building scalable, secure, and maintainable RESTful microservices deployed on Microsoft Azure using Docker, Kubernetes, and serverless functions.",
+    Summary: "Software Engineer skilled in designing and developing cloud-native, event-driven applications using Java, C#, Python (FastAPI), JavaScript/TypeScript, React, and Node.js. Experienced in building scalable, secure, and maintainable RESTful microservices deployed on Microsoft Azure using Docker, Kubernetes, and serverless functions.",
     image: "/image/unnamed.jpg",
   },
   
@@ -17,13 +17,16 @@ export const portfolioData = {
       company: "Hamden Technology Ltd",
       role: "Software Engineer Intern",
       location: "UK",
-      duration: "September 2025 – November 2025",
+      duration: "Jan 2025 – Feb 2026",
       description: "Developed backend services using Node.js and NestJS for a Home Care Training & Compliance Portal for 200+ healthcare staff.",
       achievements: [
-        "Designed and implemented RESTful APIs integrating PostgreSQL and Kafka for user management, course enrollment, certificate generation, and compliance tracking, supporting 500+ concurrent users",
-        "Built a role-based training matrix system, reducing manual training administration time by 70%",
-        "Integrated third-party APIs: Zoom/Teams, SendGrid, Twilio, and Firebase for communication and notifications",
-        "Deployed services using Docker containers and Kubernetes on Azure/AWS infrastructure with CDN integration"
+        "Worked on developing a Care-Home training portal web application serving 500+ concurrent users using React.", 
+        "Designed and built backend services using Python following clean architecture principles.",  
+        "Built RESTful APIs with database integration using Domain-Driven Design and deployed containerized", 
+        "applications on cloud Infrastructure.",  
+        "Developed a learning platform supporting 200+ concurrent students.", 
+        "Integrated third-party services for notifications, live classes, and real-time communication.", 
+        "Implemented automated testing for finding bugs and designed event-driven workflows for real-time updates. Experienced in collaborating with Product Owners and UX Designers." 
       ],
       technologies: ["Node.js", "React", "Python", "NestJS", "PostgreSQL", "Docker", "Kubernetes", "Azure", "AWS"]
     },
