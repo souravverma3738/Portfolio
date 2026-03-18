@@ -32,7 +32,7 @@ export const portfolioData = {
       company: "App Era Technologies",
       role: "Backend Engineer (Java)",
       location: "Noida, India (Remote)",
-      duration: "November 2024 – July 2025",
+      duration: "August 2024 – December 2024",
       description: "Built secure, scalable backend services using Java & Spring Boot, maintaining 99.9% uptime.",
       achievements: [
         "Implemented JWT & OAuth2 authentication, reducing unauthorized access attempts by 40%",
