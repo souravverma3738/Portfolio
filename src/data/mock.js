@@ -15,7 +15,7 @@ export const portfolioData = {
     {
       id: 1,
       company: "Hamden Technology Ltd",
-      role: "Software Engineer Intern",
+      role: "Software Engineer",
       location: "UK",
       duration: "Jan 2025 – Feb 2026",
       description: "Developed backend services using Node.js and NestJS for a Home Care Training & Compliance Portal for 200+ healthcare staff.",
@@ -35,7 +35,7 @@ export const portfolioData = {
       company: "App Era Technologies",
       role: "Backend Engineer (Java)",
       location: "Noida, India (Remote)",
-      duration: "November 2024 – July 2025",
+      duration: "Aug 2024 – Dec 2024",
       description: "Built secure, scalable backend services using Java & Spring Boot, maintaining 99.9% uptime.",
       achievements: [
         "Implemented JWT & OAuth2 authentication, reducing unauthorized access attempts by 40%",
